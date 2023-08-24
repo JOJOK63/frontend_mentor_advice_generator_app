@@ -1,6 +1,6 @@
 *{
   box-sizing: border-box;
-  box-shadow: 0 0 0 3px inset red;
+  /*box-shadow: 0 0 0 3px inset red;*/
   margin: 0;
   padding: 0;
 }
@@ -22,8 +22,8 @@ body,html {
   font-weight: 800;
   background-color: $Dark_Grayish_Blue;
   .content{
-    width: 90%;
-    height: 45%;
+    width: 350px;
+    height: 315px;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -119,5 +119,7 @@ body,html {
 
   }
 }
+
+
 
 
