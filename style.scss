@@ -1,0 +1,123 @@
+*{
+  box-sizing: border-box;
+  box-shadow: 0 0 0 3px inset red;
+  margin: 0;
+  padding: 0;
+}
+
+
+  $Light_Cyan: hsl(193, 38%, 86%);
+$Neon_Green: hsl(150, 100%, 66%);
+
+
+$rayish_Blue: hsl(217, 19%, 38%);
+$Dark_Grayish_Blue: hsl(217, 19%, 24%);
+$Dark_Blue: hsl(218, 23%, 16%);
+
+
+body,html {
+  
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  background-color: $Dark_Grayish_Blue;
+  .content{
+    width: 90%;
+    height: 45%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    background-color: $rayish_Blue;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+
+    h1{
+      font-size: .45em;
+      letter-spacing: 2px;
+      color:$Neon_Green;
+      margin-bottom: 30px;
+      width: 100%;
+      height: 18px;
+    }
+
+    blockquote{
+      font-size: 0.8em;
+      margin-bottom: 10px;
+      width: 100%;
+      height: 124px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      &::before{
+        content: '\201C'; /* Guillemet ouvrant */
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 36px;
+      }
+
+      &::after {
+        position: absolute;
+        content: '\201D'; /* Guillemet fermant */
+        right: 0;
+        bottom: 0;
+        font-size: 36px;
+      }
+    }
+
+    .line{
+      width: 100%;
+      height: 50px;
+      background-image: url(images/pattern-divider-mobile.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size : contain;
+      position: relative;
+
+      &::after , &::before{
+        width: 120px;
+        border: solid 1px hsla(0, 0%, 100%, 0.145);
+        border-bottom: none;
+      }
+
+      &::before{
+        content: "";
+        position:absolute;
+        top:50%;
+        left: 0%;
+        transform: translateY(-50%);
+        z-index: 10;
+       }
+
+      &::after{
+        content: "";
+        position:absolute;
+        top:50%;
+        right: 0%;
+        transform: translateY(-50%);
+        z-index: 10;
+       }
+    }
+    button{
+      background-image: url(images/icon-dice.svg);
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-position: cover;
+      position: relative;
+      top: 17px;
+      background-color: $Neon_Green;
+      border: none;
+    }
+
+  }
+}
+
+
